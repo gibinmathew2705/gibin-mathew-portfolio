@@ -146,8 +146,7 @@ const ContactSection = () => {
               <Button variant="outline" asChild>
                 <a
                   href="/Gibin_Mathew_QA_Test_Engineer_Resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  download="Gibin_Mathew_QA_Test_Engineer_Resume.pdf"
                   className="flex items-center gap-2"
                 >
                   Resume PDF

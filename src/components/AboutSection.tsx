@@ -41,8 +41,8 @@ const AboutSection = () => {
             <Button className="btn-gradient" asChild>
               <a
                 href="/Gibin_Mathew_QA_Test_Engineer_Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+                download="Gibin_Mathew_QA_Test_Engineer_Resume.pdf"
+                className="flex items-center gap-2"
               >
                 Download Resume
               </a>
