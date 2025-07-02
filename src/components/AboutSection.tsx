@@ -30,7 +30,7 @@ const AboutSection = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <Button className="btn-gradient" asChild>
-              <a href="/resume.pdf" download>
+              <a href="Gibin_Mathew_QA_Test_Engineer_Resume.pdf" download>
                 Download Resume
               </a>
             </Button>

@@ -136,7 +136,7 @@ const ContactSection = () => {
                 </a>
               </Button>
               <Button variant="outline" asChild>
-                <a href="/Gibin_Mathew_Resume.pdf" download="Gibin_Mathew_Resume.pdf" className="flex items-center gap-2">
+                <a href="/" download="Gibin_Mathew_QA_Test_Engineer_Resume.pdf" className="flex items-center gap-2">
                   Resume PDF
                   <ExternalLink className="h-4 w-4" />
                 </a>
