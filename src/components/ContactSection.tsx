@@ -6,6 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
+import emailjs from '@emailjs/browser';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +14,7 @@ const ContactSection = () => {
     email: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -20,14 +22,39 @@ const ContactSection = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
-    toast({
-      title: "Message sent successfully!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
-    });
-    setFormData({ name: '', email: '', message: '' });
+    setIsSubmitting(true);
+
+    try {
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+        to_name: 'Gibin Mathew',
+      };
+
+      await emailjs.send(
+        'service_lw7q89d',
+        'template_uy7g3tg',
+        templateParams,
+        'XT3gWJTxGEwcqTVYS'
+      );
+
+      toast({
+        title: "Message sent successfully!",
+        description: "Thank you for reaching out. I'll get back to you soon.",
+      });
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      toast({
+        title: "Failed to send message",
+        description: "Please try again or contact me directly via email.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -99,7 +126,7 @@ const ContactSection = () => {
             <div className="flex gap-4">
               <Button variant="outline" asChild>
                 <a 
-                  href="https://linkedin.com/in/gibin-mathew" 
+                  href="https://www.linkedin.com/in/gibin-mathew" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"
@@ -109,7 +136,7 @@ const ContactSection = () => {
                 </a>
               </Button>
               <Button variant="outline" asChild>
-                <a href="/resume.pdf" download className="flex items-center gap-2">
+                <a href="/Gibin_Mathew_Resume.pdf" download="Gibin_Mathew_Resume.pdf" className="flex items-center gap-2">
                   Resume PDF
                   <ExternalLink className="h-4 w-4" />
                 </a>
@@ -163,9 +190,9 @@ const ContactSection = () => {
                 />
               </div>
               
-              <Button type="submit" className="w-full btn-gradient">
+              <Button type="submit" className="w-full btn-gradient" disabled={isSubmitting}>
                 <Send className="mr-2 h-4 w-4" />
-                Send Message
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </Button>
             </form>
           </CardContent>

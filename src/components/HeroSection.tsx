@@ -1,7 +1,7 @@
 import { ArrowDown, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import profileImage from '@/assets/gibin-profile.jpg';
+import profileImage from '@/assets/gibin-profile-new.jpg';
 import heroBg from '@/assets/hero-bg.jpg';
 
 const HeroSection = () => {
@@ -38,14 +38,19 @@ const HeroSection = () => {
       <div className="relative z-10 portfolio-section text-center">
         <div className="max-w-4xl mx-auto">
           {/* Profile Image */}
-          <div className="mb-8">
-            <Card className="inline-block p-2 shadow-elegant">
-              <img
-                src={profileImage}
-                alt="Gibin Mathew - QA Test Engineer"
-                className="w-48 h-48 rounded-xl object-cover mx-auto"
-              />
-            </Card>
+          <div className="mb-8 relative">
+            <div className="relative inline-block">
+              <div className="w-56 h-56 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl mx-auto bg-gradient-to-br from-primary/10 to-accent/10 p-1">
+                <img
+                  src={profileImage}
+                  alt="Gibin Mathew - QA Test Engineer"
+                  className="w-full h-full rounded-full object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center shadow-lg">
+                <span className="text-white text-2xl font-bold">QA</span>
+              </div>
+            </div>
           </div>
 
           {/* Main Headline */}
@@ -72,7 +77,7 @@ const HeroSection = () => {
             </Button>
             
             <Button variant="outline" className="text-lg px-8 py-3" asChild>
-              <a href="/resume.pdf" download>
+              <a href="/Gibin_Mathew_Resume.pdf" download="Gibin_Mathew_Resume.pdf">
                 <Download className="mr-2 h-5 w-5" />
                 Download Resume
               </a>
