@@ -57,26 +57,7 @@ const HeroSection = () => {
               </div>
 
               {/* Available Badge */}
-              <span
-                style={{
-                  position: "absolute",
-                  top: "20px",
-                  left: "400px",
-                  transform: "translateX(-50%)",
-                  backgroundColor: "#e6f4ea",
-                  color: "#0b6e4f",
-                  padding: "6px 16px",
-                  borderRadius: "999px",
-                  fontWeight: 600,
-                  fontSize: "0.8rem",
-                  animation: "pulse 2s infinite",
-                  whiteSpace: "nowrap",
-                  boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
-                  border: "1px solid #c3e9d5",
-                  zIndex: 10,
-                }}
-                
-              >
+              <span className="absolute top-1/2 -translate-y-1/2 left-[-300px] bg-[#e6f4ea] text-[#0b6e4f] px-4 py-1.5 rounded-full font-semibold text-xs sm:text-sm border border-[#c3e9d5] shadow-md animate-pulse z-10 whitespace-nowrap">
                 📢 Available for new opportunities
               </span>
             </div>
