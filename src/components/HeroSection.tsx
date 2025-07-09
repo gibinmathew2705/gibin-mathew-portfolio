@@ -37,13 +37,19 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 portfolio-section text-center">
-        <div className="max-w-4xl mx-auto">
-          {/* Profile Image */}
-          <div className="mb-8 relative pt-4 px-4">
-            <div className="relative inline-block">
-              {/* Profile image with border */}
-              <div className="w-56 h-56 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl mx-auto bg-gradient-to-br from-primary/10 to-accent/10 p-1">
+      <div className="relative z-10 portfolio-section text-center w-full">
+        <div className="max-w-4xl mx-auto flex flex-col items-center">
+          {/* Profile Section with Badge */}
+          <div className="relative flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-start mt-4 mb-8 w-full px-4">
+
+            {/* Available Badge */}
+            <span className="pt-1 mb-4 lg:mb-0 lg:mr-6 bg-[#e6f4ea] text-[#0b6e4f] px-4 py-1.5 rounded-full font-semibold text-xs sm:text-sm border border-[#c3e9d5] shadow-md animate-pulse whitespace-nowrap">
+              📢 Available for new opportunities
+            </span>
+
+            {/* Profile Image + QA Badge */}
+            <div className="relative pt-0 lg:pt-6">
+              <div className="w-56 h-56 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl bg-gradient-to-br from-primary/10 to-accent/10 p-1">
                 <img
                   src={profileImage}
                   alt="Gibin Mathew - QA Test Engineer"
@@ -55,15 +61,10 @@ const HeroSection = () => {
               <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center shadow-lg">
                 <span className="text-white text-2xl font-bold">QA</span>
               </div>
-
-              {/* Available Badge */}
-              <span className="absolute top-1/2 -translate-y-1/2 left-[-300px] bg-[#e6f4ea] text-[#0b6e4f] px-4 py-1.5 rounded-full font-semibold text-xs sm:text-sm border border-[#c3e9d5] shadow-md animate-pulse z-10 whitespace-nowrap">
-                📢 Available for new opportunities
-              </span>
             </div>
           </div>
 
-          {/* Headline */}
+          {/* Main Headline */}
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
             Hi, I'm <span className="text-gradient">Gibin</span> — a QA Engineer
             <br />
@@ -72,7 +73,7 @@ const HeroSection = () => {
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl leading-relaxed">
             2.5+ years in software testing, healthcare domain experience,
             automation with Selenium, and a sharp eye for quality.
           </p>
@@ -98,7 +99,7 @@ const HeroSection = () => {
             </Button>
           </div>
 
-          {/* Tags */}
+          {/* Skills Tags */}
           <div className="flex flex-wrap justify-center gap-3">
             {[
               "Manual Testing",
@@ -116,7 +117,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Scroll Down Indicator */}
+      {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
         <button
           onClick={scrollToAbout}
