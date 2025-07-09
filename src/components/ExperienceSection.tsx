@@ -42,7 +42,7 @@ const ExperienceSection = () => {
                 <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-muted-foreground">
                   <div className="flex items-center gap-1">
                     <Calendar className="h-4 w-4" />
-                    Feb 2023 – May 2025
+                    Feb 2023 – June 2025
                   </div>
                   <div className="flex items-center gap-1">
                     <MapPin className="h-4 w-4" />
