@@ -145,8 +145,8 @@ const ContactSection = () => {
               </Button>
               <Button variant="outline" asChild>
                 <a
-                  href="/Gibin_Mathew_QA_Test_Engineer_Resume.pdf"
-                  download="Gibin_Mathew_QA_Test_Engineer_Resume.pdf"
+                  href="/Gibin Mathew_QA_Test_Engineer_Resume.pdf"
+                  download="Gibin Mathew_QA_Test_Engineer_Resume.pdf"
                   className="flex items-center gap-2"
                 >
                   Resume PDF

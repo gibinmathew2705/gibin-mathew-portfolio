@@ -90,8 +90,8 @@ const HeroSection = () => {
 
             <Button variant="outline" className="text-lg px-8 py-3" asChild>
               <a
-                href="/Gibin_Mathew_QA_Test_Engineer_Resume.pdf"
-                download="Gibin_Mathew_QA_Test_Engineer_Resume.pdf"
+                href="/Gibin Mathew_QA_Test_Engineer_Resume.pdf"
+                download="Gibin Mathew_QA_Test_Engineer_Resume.pdf"
               >
                 <Download className="mr-2 h-5 w-5" />
                 Download Resume

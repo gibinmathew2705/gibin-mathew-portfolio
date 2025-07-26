@@ -40,8 +40,8 @@ const AboutSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <Button className="btn-gradient" asChild>
               <a
-                href="/Gibin_Mathew_QA_Test_Engineer_Resume.pdf"
-                download="Gibin_Mathew_QA_Test_Engineer_Resume.pdf"
+                href="/Gibin Mathew_QA_Test_Engineer_Resume.pdf"
+                download="Gibin Mathew_QA_Test_Engineer_Resume.pdf"
                 className="flex items-center gap-2"
               >
                 Download Resume
