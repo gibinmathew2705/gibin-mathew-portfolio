@@ -18,18 +18,18 @@ const ProjectsSection = () => {
     {
       icon: Database,
       title: "Data Integrity",
-      description: "Verified API response integrity and backed it with SQL validation for complete data flow accuracy"
+      description: "Backed data flows with SQL validation across MySQL databases"
     }
   ];
 
   const technologies = [
-    "Bugzilla", "Squash TM", "MySQL Developer", "Selenium with Java", 
+    "Bugzilla", "Squash TM", "MySQL Developer", "Selenium with Java", "TestNG", "Page Object Model", 
     "JIRA", "Cross-browser Testing", "SQL Validation", "Test Case Design"
   ];
 
   const achievements = [
-    "Authored concise and clear bug reports that helped reduce time-to-fix by 30%",
-    "Wrote lightweight automation scripts to streamline repetitive test scenarios using Selenium and Java",
+    "Wrote clear bug reports with reproduction steps, screenshots and severity so developers could act quickly",
+    "Developed Selenium, Java and TestNG automation scripts for repetitive test scenarios",
     "Played a key role in sprint-level planning and QA effort estimation"
   ];
 
@@ -117,26 +117,33 @@ const ProjectsSection = () => {
                 ))}
               </div>
             </div>
+          </CardContent>
+        </Card>
 
-            {/* Project Metrics */}
-            <div className="grid md:grid-cols-4 gap-4 pt-6 border-t border-border">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary mb-1">1000+</div>
-                <div className="text-sm text-muted-foreground">Users Served</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary mb-1">95%</div>
-                <div className="text-sm text-muted-foreground">Test Coverage</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary mb-1">50+</div>
-                <div className="text-sm text-muted-foreground">Critical Bugs Fixed</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary mb-1">30%</div>
-                <div className="text-sm text-muted-foreground">Faster Resolution</div>
-              </div>
+        {/* Personal project */}
+        <Card className="experience-card border-l-4 border-l-primary">
+          <CardHeader>
+            <CardTitle className="text-2xl font-bold">TrackSmart</CardTitle>
+            <div className="flex flex-wrap gap-2 pt-2">
+              <Badge variant="secondary">Personal Project</Badge>
+              <Badge variant="outline">Fintech-style Expense Tracker</Badge>
             </div>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              A personal fintech-style expense tracker built to showcase QA automation: a React, TypeScript and Firebase app, with a Playwright and TypeScript test suite built around the Page Object Model (in progress).
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {["React", "TypeScript", "Firebase", "Playwright", "Page Object Model"].map((t) => (
+                <Badge key={t} variant="outline" className="px-3 py-1">{t}</Badge>
+              ))}
+            </div>
+            {/* TODO: point this at the TrackSmart repo once it is public */}
+            <Button variant="outline" asChild>
+              <a href="https://github.com/gibinmathew2705" target="_blank" rel="noopener noreferrer">
+                <Github className="mr-2 h-4 w-4" /> View on GitHub
+              </a>
+            </Button>
           </CardContent>
         </Card>
       </div>

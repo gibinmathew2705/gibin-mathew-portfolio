@@ -66,7 +66,7 @@ const HeroSection = () => {
 
           {/* Main Headline */}
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-            Hi, I'm <span className="text-gradient">Gibin</span> — a QA Engineer
+            Hi, I'm <span className="text-gradient">Gibin</span> — a QA Automation Engineer
             <br />
             building trust through{" "}
             <span className="text-gradient">tested software</span>
@@ -74,8 +74,8 @@ const HeroSection = () => {
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl leading-relaxed">
-            2.5+ years in software testing, healthcare domain experience,
-            automation with Selenium, and a sharp eye for quality.
+            3+ years in banking and healthcare QA, building reliable web, mobile
+            and API test automation with Selenium, Appium and Playwright.
           </p>
 
           {/* CTA Buttons */}
@@ -102,12 +102,12 @@ const HeroSection = () => {
           {/* Skills Tags */}
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              "Manual Testing",
-              "Selenium Automation",
-              "Healthcare Domain",
-              "Agile Methodology",
+              "Mobile Automation (Appium)",
+              "Selenium & Playwright",
+              "API Testing",
+              "Banking & Healthcare",
               "SQL Validation",
-              "Quality Assurance",
+              "Agile Scrum",
             ].map((tag) => (
               <span key={tag} className="skill-badge">
                 {tag}

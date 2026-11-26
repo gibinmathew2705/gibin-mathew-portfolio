@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, Phone, MapPin, Send, ExternalLink } from "lucide-react";
+import { Mail, MapPin, Send, ExternalLink } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -65,12 +65,6 @@ const ContactSection = () => {
       label: "Email",
       value: "gibinmathew2705@gmail.com",
       href: "mailto:gibinmathew2705@gmail.com",
-    },
-    {
-      icon: Phone,
-      label: "Phone",
-      value: "+91 96560 17058",
-      href: "tel:+919656017058",
     },
     {
       icon: MapPin,
