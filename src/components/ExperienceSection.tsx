@@ -18,8 +18,12 @@ const roles = [
       "Ran automated regression through Jenkins, investigated failures and debugged scripts to improve stability",
       "Managed defects in JIRA with developers and cross-functional teams; took part in Agile Scrum ceremonies",
     ],
-    technologies: ["Appium", "Java", "TestNG", "Selenium", "Cucumber", "Playwright", "ReadyAPI", "Bruno", "Perfecto", "Jenkins", "JIRA", "Git", "Bitbucket"],
-    stats: [{ value: "Android + iOS", label: "Real-device testing" }, { value: "Credo Award", label: "Client recognition" }],
+  technologies: ["Appium", "Selenium", "Playwright", "Java", "TestNG", "Cucumber (BDD)", "ReadyAPI", "Bruno", "REST", "SOAP", "Perfecto", "Jenkins", "JIRA", "Git", "Bitbucket"],
+  stats: [
+    { value: "Web · Mobile · API", label: "Test automation coverage" },
+    { value: "Android + iOS", label: "Real-device testing" },
+    { value: "Credo Award", label: "Client recognition" },
+  ],
   },
   {
     title: "QA Test Engineer",
@@ -27,7 +31,7 @@ const roles = [
     period: "Feb 2023 – Jun 2025",
     badge: "2+ Years",
     achievements: [
-      "Designed, executed and maintained 200+ functional and regression test cases for a healthcare eligibility system",
+      "Designed, executed and maintained 600+ functional and regression test cases for a healthcare eligibility system",
       "Ran end-to-end testing across multiple healthcare benefit programs to confirm accurate eligibility determination",
       "Developed Selenium WebDriver scripts using Java, TestNG and Page Object Model",
       "Validated backend data with SQL queries across multiple MySQL databases",
@@ -37,7 +41,7 @@ const roles = [
       "Ran knowledge transfer sessions and helped onboard new QA team members",
     ],
     technologies: ["Selenium", "Java", "TestNG", "POM", "SQL", "MySQL", "Bugzilla", "Squash TM", "JIRA", "Cross-browser Testing", "Agile Scrum"],
-    stats: [{ value: "200+", label: "Test cases written" }, { value: "2x", label: "Spot Award" }],
+    stats: [{ value: "600+", label: "Test cases written" }, { value: "2x", label: "Spot Award" }],
   },
 ];
 

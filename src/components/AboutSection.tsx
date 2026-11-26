@@ -116,7 +116,7 @@ const AboutSection = () => {
               </div>
             </Card>
             <Card className="text-center p-6">
-              <div className="text-3xl font-bold text-primary mb-2">200+</div>
+              <div className="text-3xl font-bold text-primary mb-2">600+</div>
               <div className="text-sm text-muted-foreground">
                 Test Cases Written
               </div>
